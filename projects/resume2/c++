@@ -1,0 +1,90 @@
+#include <iostream>
+#include <string>
+
+class Person {
+private:
+    std::string name;
+    int age;
+
+public:
+    // Getter for name
+    std::string getName() const {
+        return name;
+    }
+
+    // Setter for name
+    void setName(const std::string& newName) {
+        name = newName;
+    }
+
+    // Getter for age
+    int getAge() const {
+        return age;
+    }
+
+    // Setter for age
+    void setAge(int newAge) {
+        if (newAge >= 0) { // Simple validation
+            age = newAge;
+        } else {
+            std::cout << "Age cannot be negative." << std::endl;
+        }
+    }
+};
+
+int main() {
+    Person person;
+
+    // Using setters to set values
+    person.setName("Alice");
+    person.setAge(30);
+
+    // Using getters to retrieve values
+    std::cout << "Name: " << person.getName() << std::endl;
+    std::cout << "Age: " << person.getAge() << std::endl;
+
+    // Attempting to set an invalid age
+    person.setAge(-5);
+
+    return 0;
+}
+
+
+#include <iostream>
+#include <string>
+
+class Car {
+private:
+    std::string brand;
+    int year;
+
+public:
+    // Constructor
+    Car(const std::string& carBrand, int carYear) {
+        brand = carBrand;
+        year = carYear;
+        std::cout << "Car " << brand << " of year " << year << " created." << std::endl;
+    }
+
+    // Destructor
+    ~Car() {
+        std::cout << "Car " << brand << " destroyed." << std::endl;
+    }
+
+    // Method to display car details
+    void displayInfo() const {
+        std::cout << "Brand: " << brand << ", Year: " << year << std::endl;
+    }
+};
+
+int main() {
+    // Creating an object of Car class
+    Car myCar("Toyota", 2020);
+
+    // Calling the method to display car information
+    myCar.displayInfo();
+
+    // Object goes out of scope here, destructor will be called automatically
+
+    return 0;
+}

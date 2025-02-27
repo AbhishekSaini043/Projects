@@ -1,0 +1,28 @@
+h1{
+    color: rgb(255, 182, 127);
+    
+
+
+}
+h2{
+    color: brown;
+}
+h3{
+    color:blueviolet;
+}
+body{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    padding: 4px;
+    height:4px;
+    background-image:url(https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg) ;
+
+}
+p1{
+    text-decoration: underline;
+}
+h4{
+    color: black;
+
+}

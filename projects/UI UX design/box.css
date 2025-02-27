@@ -1,0 +1,30 @@
+.box {  
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: 100px;
+    transition: 1s;
+    transition-duration: 1s;
+    
+    
+
+}
+.box:hover{
+    background-color: rgb(187, 205, 20);
+    border-radius:50%;
+    transform:rotate(180deg);
+}
+.item{
+    font-size:2rem ;
+    padding:8px 12px ;
+    transition: 0.3;
+
+}
+.item:hover{
+    cursor: pointer;
+    background: black;
+    color:white;
+    transform: translateY(-10px);
+    
+
+}

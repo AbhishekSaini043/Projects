@@ -1,0 +1,41 @@
+body{
+    text-align: center;
+    background-color: rgb(212, 244, 246);
+    padding: 50px;
+    margin: 50px;
+
+}
+#project li {
+    display: black;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(32, 244, 237);
+    width: 50px;
+    text-align: center;
+    margin: 100px;
+}
+#project li:hover{
+    background-color: rgb(10, 11, 11);
+    transform: translateY(10deg);
+    cursor: pointer;
+    color: aliceblue;
+    transition:0.5ms ;
+    border-radius: 50%;
+    margin: 100px;
+}
+#skill li {
+    display: black;
+    margin: 100px;
+    padding: 10px;
+    background-color: rgb(32, 244, 237);
+    width: 100px;
+    text-align: center;
+}
+#skill li:hover{
+    background-color: rgb(10, 11, 11);
+    transform: translateY(10deg);
+    cursor: pointer;
+    color: aliceblue;
+    transition:0.5ms ;
+    border-radius: 50%;
+}
